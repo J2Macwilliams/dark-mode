@@ -1,6 +1,8 @@
 import React from 'react'
 import Navbar from "./Navbar";
 
+import merkel from "../img/merkel.png";
+
 
 
 function Home() {
@@ -14,6 +16,7 @@ function Home() {
                     is a growing list of records, called blocks, that are linked using cryptography. Each block contains a cryptographic hash of the previous block, a timestamp, and transaction data (generally represented as a Merkle tree).
                     </h2></a>
                 </div>
+                <a href="https://www.magicblockchainqa.com/category/merkle-tree-in-blockchain/" ><img src={merkel} alt="merkel-tree"/></a>
              </div>   
         </div>
     )
