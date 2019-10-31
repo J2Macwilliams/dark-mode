@@ -12,8 +12,10 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <h1>Crypto Tracker</h1>
-      <NavLink to='/' activeClassName="activeNavButton">Home</NavLink>
-      <NavLink to='/charts-page' activeClassName="activeNavButton">Charts</NavLink>
+      <NavLink exact to='/'         activeClassName="activeNavButton" className="navLink" >
+        Home
+      </NavLink>
+      <NavLink to='/charts-page' activeClassName="activeNavButton" className="navLink" >Charts</NavLink>
       <div className="dark-mode__toggle">
         <div
           onClick={toggleMode}
