@@ -3,9 +3,10 @@ import  useLocalStorage  from './useLocalStorage';
 
 function useDarkMode(key, initialValues)  {
     const [value, setValue] = useLocalStorage(key, initialValues)
-    const body = document.querySelector('body');
+    
 
     useEffect(() => {
+        const body = document.querySelector('body');
         if(value) {
             body.classList.add('dark-mode');
         }else{
